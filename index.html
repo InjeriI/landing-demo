@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авто-Мастер - Профессиональный автосервис</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-icon"><img src="logo.png" alt="logo"></div>
+                <div class="logo-section">
+                    <div class="logo-text">
+                        <h1 class="logo-title">Авто-Мастер</h1>
+                        <p class="logo-city">Москва</p>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <i class="fas fa-phone"></i>
+                    <span class="phone-number">+7 (495) 123-45-67</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Слайдер - на всю ширину -->
+        <section class="slider-section">
+            <div class="slider-container">
+                <div class="slider-wrapper">
+                    <div class="slide active">
+                        <img src="slide1_blur.png" alt="Профессиональный автосервис">
+                        <div class="slide-overlay">
+                            <h2 class="slide-title">Профессиональный автосервис</h2>
+                            <p class="slide-subtitle">Качественный ремонт и обслуживание вашего автомобиля</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="slide2_blur.png" alt="Современное оборудование">
+                        <div class="slide-overlay">
+                            <h2 class="slide-title">Современное оборудование</h2>
+                            <p class="slide-subtitle">Используем только новейшие технологии и инструменты</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="slide3_blur.png" alt="Опытные специалисты">
+                        <div class="slide-overlay">
+                            <h2 class="slide-title">Опытные специалисты</h2>
+                            <p class="slide-subtitle">Наши мастера имеют более 10 лет опыта в автосервисе</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Кнопки навигации -->
+                <button class="slider-btn prev-btn" id="prevBtn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="slider-btn next-btn" id="nextBtn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                
+                <!-- Индикаторы слайдов -->
+                <div class="slider-dots" id="sliderDots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Услуги -->
+        <section class="services-section">
+            <div class="container">
+                <h2 class="section-title">Наши услуги</h2>
+                <div class="services-container">
+                    <div class="services-column">
+                        <!-- Услуга 1 -->
+                        <div class="service-card">
+                            <div class="service-header">
+                                <h3 class="service-title">Диагностика двигателя</h3>
+                                <i class="fas fa-chevron-down arrow"></i>
+                            </div>
+                            <div class="service-description">
+                                Комплексная компьютерная диагностика всех систем двигателя с выявлением неисправностей и рекомендациями по ремонту.
+                            </div>
+                        </div>
+                        <!-- Услуга 2 -->
+                        <div class="service-card">
+                            <div class="service-header">
+                                <h3 class="service-title">Замена масла</h3>
+                                <i class="fas fa-chevron-down arrow"></i>
+                            </div>
+                            <div class="service-description">
+                                Профессиональная замена моторного масла и масляного фильтра с использованием качественных расходных материалов.
+                            </div>
+                        </div>
+                        <!-- Услуга 3 -->
+                        <div class="service-card">
+                            <div class="service-header">
+                                <h3 class="service-title">Ремонт тормозной системы</h3>
+                                <i class="fas fa-chevron-down arrow"></i>
+                            </div>
+                            <div class="service-description">
+                                Диагностика и ремонт тормозных колодок, дисков, суппортов и всей тормозной системы автомобиля.
+                            </div>
+                        </div>
+                        <!-- Услуга 4 -->
+                        <div class="service-card">
+                            <div class="service-header">
+                                <h3 class="service-title">Шиномонтаж</h3>
+                                <i class="fas fa-chevron-down arrow"></i>
+                            </div>
+                            <div class="service-description">
+                                Услуги по замене, балансировке и ремонту шин, а также хранение сезонной резины.
+                            </div>
+                        </div>
+                        <!-- Услуга 5 -->
+                        <div class="service-card">
+                            <div class="service-header">
+                                <h3 class="service-title">Ремонт подвески</h3>
+                                <i class="fas fa-chevron-down arrow"></i>
+                            </div>
+                            <div class="service-description">
+                                Диагностика и замена амортизаторов, рычагов, сайлентблоков и других элементов подвески.
+                            </div>
+                        </div>
+                        <!-- Услуга 6 -->
+                        <div class="service-card">
+                            <div class="service-header">
+                                <h3 class="service-title">Электрика автомобиля</h3>
+                                <i class="fas fa-chevron-down arrow"></i>
+                            </div>
+                            <div class="service-description">
+                                Поиск и устранение неисправностей в электрической системе, замена генераторов и стартеров.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services-column">
+                        <!-- Услуга 7 -->
+                        <div class="service-card">
+                            <div class="service-header">
+                                <h3 class="service-title">Кузовной ремонт</h3>
+                                <i class="fas fa-chevron-down arrow"></i>
+                            </div>
+                            <div class="service-description">
+                                Восстановление геометрии кузова, покраска, удаление вмятин и царапин без покраски.
+                            </div>
+                        </div>
+                        <!-- Услуга 8 -->
+                        <div class="service-card">
+                            <div class="service-header">
+                                <h3 class="service-title">Климат-контроль</h3>
+                                <i class="fas fa-chevron-down arrow"></i>
+                            </div>
+                            <div class="service-description">
+                                Диагностика, заправка и ремонт систем кондиционирования и отопления салона.
+                            </div>
+                        </div>
+                        <!-- Услуга 9 -->
+                        <div class="service-card">
+                            <div class="service-header">
+                                <h3 class="service-title">Трансмиссия</h3>
+                                <i class="fas fa-chevron-down arrow"></i>
+                            </div>
+                            <div class="service-description">
+                                Ремонт и обслуживание автоматических и механических коробок передач, раздаточных коробок.
+                            </div>
+                        </div>
+                        <!-- Услуга 10 -->
+                        <div class="service-card">
+                            <div class="service-header">
+                                <h3 class="service-title">Выхлопная система</h3>
+                                <i class="fas fa-chevron-down arrow"></i>
+                            </div>
+                            <div class="service-description">
+                                Замена глушителей, резонаторов, катализаторов и других элементов выхлопной системы.
+                            </div>
+                        </div>
+                        <!-- Услуга 11 -->
+                        <div class="service-card">
+                            <div class="service-header">
+                                <h3 class="service-title">Система охлаждения</h3>
+                                <i class="fas fa-chevron-down arrow"></i>
+                            </div>
+                            <div class="service-description">
+                                Ремонт радиаторов, термостатов, помп и других компонентов системы охлаждения двигателя.
+                            </div>
+                        </div>
+                        <!-- Услуга 12 -->
+                        <div class="service-card">
+                            <div class="service-header">
+                                <h3 class="service-title">Автомойка и химчистка</h3>
+                                <i class="fas fa-chevron-down arrow"></i>
+                            </div>
+                            <div class="service-description">
+                                Профессиональная мойка кузова, салона и химчистка салона с использованием безопасных средств.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Форма обратного звонка -->
+        <section class="callback-section">
+            <div class="container">
+                <div class="callback-container">
+                    <h2 class="callback-title">Запишитесь на обслуживание</h2>
+                    <p class="callback-subtitle">Оставьте заявку и мы перезвоним вам в течение 15 минут</p>
+                    <form id="callbackForm" class="callback-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Номер телефона" required>
+                        </div>
+                        <button type="submit" class="submit-btn">Записаться</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Преимущества -->
+        <section class="advantages-section">
+            <div class="container">
+                <h2 class="section-title">Наши преимущества</h2>
+                <div class="advantages-container">
+                    <div class="advantage-card">
+                        <div class="advantage-icon">🔧</div>
+                        <h3 class="advantage-title">Гарантия качества</h3>
+                        <p class="advantage-description">Предоставляем гарантию на все выполненные работы сроком до 12 месяцев.</p>
+                    </div>
+                    <div class="advantage-card">
+                        <div class="advantage-icon">⏱️</div>
+                        <h3 class="advantage-title">Быстрое обслуживание</h3>
+                        <p class="advantage-description">Большинство работ выполняем в день обращения без предварительной записи.</p>
+                    </div>
+                    <div class="advantage-card">
+                        <div class="advantage-icon">💰</div>
+                        <h3 class="advantage-title">Честные цены</h3>
+                        <p class="advantage-description">Фиксированные цены на все услуги, никаких скрытых платежей и переплат.</p>
+                    </div>
+                    <div class="advantage-card">
+                        <div class="advantage-icon">🏆</div>
+                        <h3 class="advantage-title">Опытные мастера</h3>
+                        <p class="advantage-description">Наши специалисты проходят регулярное обучение и имеют сертификаты производителей.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Статистика и отзывы -->
+        <section class="stats-testimonials-section">
+            <div class="container">
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <div class="stat-number">5000+</div>
+                        <div class="stat-label">Обслужено автомобилей</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">12</div>
+                        <div class="stat-label">Лет на рынке</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Довольных клиентов</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Эвакуатор</div>
+                    </div>
+                </div>
+                
+                <h2 class="section-title testimonials-title">Отзывы наших клиентов</h2>
+                <div class="testimonials-container">
+                    <div class="testimonial-card">
+                        <div class="rating">★★★★★</div>
+                        <p class="testimonial-text">"Отличный сервис! Мастера действительно знают свое дело. Ремонтировал здесь уже третий автомобиль и всегда остаюсь доволен."</p>
+                        <p class="testimonial-author">Александр Петров</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="rating">★★★★★</div>
+                        <p class="testimonial-text">"Очень оперативно помогли с заменой колеса в дороге. Цены адекватные, персонал вежливый и профессиональный."</p>
+                        <p class="testimonial-author">Мария Сидорова</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="rating">★★★★☆</div>
+                        <p class="testimonial-text">"Делал комплексную диагностику и обслуживание. Все объяснили подробно, показали что нужно менять, а что можно пока оставить."</p>
+                        <p class="testimonial-author">Дмитрий Козлов</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <div class="logo-icon"><img src="logo.png" alt="logo"></div>
+                        <h3 class="footer-title">Авто-Мастер</h3>
+                    </div>
+                    <p class="footer-description">Профессиональный автосервис в Москве с 2014 года</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-heading">Контакты</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@auto-master.ru</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+7 (495) 123-45-67</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>г. Москва, ул. Автосервисная, 15</span>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-heading">Социальные сети</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-heading">Режим работы</h4>
+                    <p>Пн-Пт: 8:00 - 20:00</p>
+                    <p>Сб-Вс: 9:00 - 18:00</p>
+                    <p class="emergency">Эвакуатор работает 24/7</p>
+                </div>
+            </div>
+            
+            <div class="car-brands">
+                <p class="brands-title">Работаем со всеми марками автомобилей:</p>
+                <div class="brands-list">
+                    <span class="brand "><img src="cars_logo/Toyota.png" alt="Toyota"></img></span>
+                    <span class="brand"><img src="cars_logo/BMW.png" alt="BMW"></span>
+                    <span class="brand"><img src="cars_logo/Mercedes.png" alt="Mercedes"></span>
+                    <span class="brand"><img src="cars_logo/Audi.png" alt="Audi"></span>
+                    <span class="brand"><img src="cars_logo/Volkswagen.png" alt="Volkswagen"></span>
+                    <span class="brand"><img src="cars_logo/Ford.png" alt="Ford"></span>
+                    <span class="brand"><img src="cars_logo/Honda.png" alt="Honda"></span>
+                    <span class="brand"><img src="cars_logo/Nissan.png" alt="Nissan"></span>
+                    <span class="brand"><img src="cars_logo/Hyundai.png" alt="Hyundai"></span>
+                    <span class="brand"><img src="cars_logo/Kia.png" alt="Kia"></span>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                © 2026 Авто-Мастер. Все права защищены.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
