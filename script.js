@@ -53,8 +53,7 @@ sliderContainer.addEventListener('mouseleave', () => {
     slideInterval = setInterval(nextSlide, 5000);
 });
 
-// Услуги - раскрытие описаний (ПОЛНОСТЬЮ ИСПРАВЛЕНО)
-// Теперь каждая карточка обрабатывается индивидуально без использования общих ID
+// Услуги - раскрытие описаний
 const serviceCards = document.querySelectorAll('.service-card');
 
 serviceCards.forEach(card => {
@@ -154,4 +153,5 @@ document.addEventListener('DOMContentLoaded', function() {
     allArrows.forEach(arrow => {
         arrow.classList.remove('rotated');
     });
+
 });
