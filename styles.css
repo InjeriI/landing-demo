@@ -1,8 +1,7 @@
 body {
-                  background-color: white; /* Ensure the iframe has a white background */
+                  background-color: white;
                 }
 
-                /* styles.css */
 
 /* Общие стили */
 * {
@@ -949,4 +948,5 @@ body {
         padding: 8px 16px;
         min-width: 80px;
     }
+
 }
